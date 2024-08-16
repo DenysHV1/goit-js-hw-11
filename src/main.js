@@ -26,10 +26,12 @@ function elementForSearch() {
     if (!myElement) {
       iziToast.error({ message: 'Please enter a search word.' });
       return;
-    }
-
+    }else{
     // clearing past results
     galleryList.innerHTML = '';
+	}
+
+
 
     // Show loading
     loader.style.display = 'block';
